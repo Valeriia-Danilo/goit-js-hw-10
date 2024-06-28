@@ -4,7 +4,10 @@
   | default @import url()
   |============================
 */
+
 @import url('./reset.css');
+@import url('./1-timer.css');
+@import url('./2-snackbar.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -20,4 +23,69 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #111;
+}
+
+.task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 1600px;
+  height: 400px;
+}
+
+.task-container::before {
+  position: absolute;
+  content: '';
+  width: 200%;
+  height: 200px;
+  background: linear-gradient(90deg, #4c60dd 30%, #ff356c);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 400px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 28px rgba(255, 255, 255, 0.35),
+    0 10px 10px rgba(255, 255, 255, 0.32);
+}
+
+.task-container:hover .card:not(:hover) {
+  background: rgba(252, 254, 254, 0.3);
+  transform: scale(1);
+  border: 1px solid #b3b3b3;
+  opacity: 0.5;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: inherit;
 }
