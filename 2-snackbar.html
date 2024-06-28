@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/2-snackbar-a2f1d37d.css">
+  </head>
+  <body>
+    <a href="./index.html" class="link-home">Назад</a>
+    <div class="form-input-container">
+      <form class="form js-form">
+        <label class="label-delay">
+          Delay (ms)
+          <input type="number" name="delay" class="input-delay" required />
+        </label>
+
+        <fieldset class="state-container">
+          <legend>State</legend>
+          <label>
+            <input
+              type="radio"
+              name="state"
+              value="fulfilled"
+              class="radio-btn visually-hidden"
+              required
+            />
+            <span class="radio-custom"></span>
+            Fulfilled
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="state"
+              value="rejected"
+              class="radio-btn visually-hidden"
+              required
+            />
+            <span class="radio-custom"></span>
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit" class="input-btn">Create notification</button>
+      </form>
+    </div>
+    
+  </body>
+</html>
