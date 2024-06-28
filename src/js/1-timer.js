@@ -31,7 +31,7 @@ const options = {
 iziToast.settings({
     resetOnHover: true,
     icon: 'material-icons',
-        class: 'custom-toast',
+    class: 'custom-toast',
     icon: 'icon-person',
     color: '#ef4040',
     titleSize: '16px',
@@ -42,7 +42,7 @@ iziToast.settings({
     messageLineHeight: '1.5',
     position: 'topRight',
     progressBarColor: '#b51b1b',
-    iconUrl: './img/error-icon.svg',
+    iconUrl: './src/img/error-icon.svg',
     theme: 'light',
     progressBar: true,
     timeout: 2500,
