@@ -42,7 +42,6 @@ iziToast.settings({
     messageLineHeight: '1.5',
     position: 'topRight',
     progressBarColor: '#b51b1b',
-    iconUrl: './src/img/error-icon.svg',
     theme: 'light',
     progressBar: true,
     timeout: 2500,
